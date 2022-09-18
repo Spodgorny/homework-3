@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <a class="weblogo" href="./index.html"><span>Web</span>Studio</a>
-        <nav>
+        <nav class="container main-nav">
+            <a class="weblogo" href="./index.html"><span>Web</span>Studio</a>
             <ul class="header-nav">
                 <li>
                     <a class="nav-item current" href="#">Студія</a>
@@ -22,16 +22,16 @@
                 <li>
                     <a class="nav-item" href="#">Контакти</a>
                 </li>
+            </ul>           
+            <ul class="contacts">
+                <li>
+                    <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li>
-                <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
     </header>
     <main>
         <section class="sectionone">
@@ -39,68 +39,83 @@
             <button class="btn" type="button">Замовити послугу</button>
         </section>
         <section>
-            <h2 class="visually-hidden">Особливості WebStudio</h2>
-            <ul>
-                <li>
+            <div class="container">
+                <h2 class="visually-hidden">Особливості WebStudio</h2>
+                <ul class=" bussines">
+                 <li class="bussines-li">
                     <h3 class="important">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p class="import-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції</p>
-                </li>
-                <li>
+                 </li>
+                 <li class="bussines-li">
                     <h3 class="important">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="import-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li>
+                 </li>
+                 <li class="bussines-li">
                     <h3 class="important">ПЛАНУВАННЯ</h3>
                     <p class="import-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li>
+                 </li>
+                 <li class="bussines-li">
                     <h3 class="important">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="import-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
+                 </li>
+                </ul>
+            </div>
             </section>
         <section>
-            <h2 class="nazv">Чим ми займаємося</h2>
-            <ul>
-                <li>
+            <div class="container">
+                <h2 class="nazv">Чим ми займаємося</h2>
+            <ul class="nazv-img">
+                <li class="nazv-img-link">
                     <img src="./img/tab-1.jpg" alt="deviceimg" width="370" height="294">
                 </li>
-                <li>
+                <li class="nazv-img-link">
                     <img src="./img/tab-2.jpg" alt="deviceimg" width="370" height="294">
                 </li>
-                <li>
+                <li class="nazv-img-link">
                     <img src="./img/tab-3.jpg" alt="deviceimg" width="370" height="294">
                 </li>
             </ul>
+            </div>
         </section>
         <section class="partner">
-            <h2 class="nazv">Наша команда</h2>
+            <div class="container">
+                <h2 class="nazv nazv-two">Наша команда</h2>
             <ul class="color">
                 <li class="bg-licolor">
                     <img src="./img/ihor.jpg" alt="ihor" width="270" height="260">
-                    <h3 class="lastname">Ігор Дем'яненко</h3>
-                    <p class="work">Product Designer</p>
+                    <div class="fio">
+                        <h3 class="lastname">Ігор Дем'яненко</h3>
+                        <p class="work">Product Designer</p>
+                    </div>
                 </li>
                 <li class="bg-licolor">
                     <img src="./img/olha.jpg" alt="olha" width="270" height="260">
-                    <h3 class="lastname">Ольга Рєпіна</h3>
-                    <p class="work">Frontend Developer</p>
+                    <div class="fio">
+                        <h3 class="lastname">Ольга Рєпіна</h3>
+                        <p class="work">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="bg-licolor">
                     <img src="./img/mikola.jpg" alt="mikola" width="270" height="260">
-                    <h3 class="lastname">Микола Тарасов</h3>
-                    <p class="work">Marketing</p>
+                    <div class="fio">
+                        <h3 class="lastname">Микола Тарасов</h3>
+                        <p class="work">Marketing</p>
+                    </div>
                 </li>
                 <li class="bg-licolor">
                     <img src="./img/misha.jpg" alt="misha" width="270" height="260">
-                    <h3 class="lastname">Михайло Єрмаков</h3>
-                    <p class="work">UI Designer</p>
+                    <div class="fio">
+                        <h3 class="lastname">Михайло Єрмаков</h3>
+                        <p class="work">UI Designer</p>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
     </main>   
     <footer class="footer">
-        <a class="weblogo weblogo--sm" href="./index.html"><span>Web</span>Studio</a>
+        <div class="container">
+            <a class="weblogo weblogo--sm" href="./index.html"><span>Web</span>Studio</a>
         <address>
             <ul>
                 <li>
@@ -114,6 +129,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
