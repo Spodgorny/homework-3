@@ -23,6 +23,11 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -42,6 +47,11 @@ ul, ol {
 .main-nav {
     display: flex;
     align-items: center;
+}
+
+.header {
+    width: 1600px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-nav {
@@ -85,13 +95,7 @@ ul, ol {
     margin-left: auto;
 }
 
-.contacts .email {
-    margin-left: 50px;
-}
 
-.contacts .tel {
-    margin-left: 50px;
-}
 
 .weblogo {
     font-family: 'Raleway', sans-serif;
@@ -111,7 +115,11 @@ ul, ol {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: block;
+    margin-right: 50px;
 }
 
 .email:hover {
@@ -123,9 +131,13 @@ ul, ol {
 }
 
 .tel {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     color: var(--secondary-text-color);
+    padding-top: 35px;
+    padding-bottom: 32px;
+    letter-spacing: 0.02em;
 }
 
 .tel:hover {
@@ -145,9 +157,8 @@ ul, ol {
     color: var(--container-bg-color);
     letter-spacing: 0.06em;
     margin-top: 0;
-    width: 696px;
-    padding-bottom: 30px;
-    margin: auto;
+    max-width: 696px;
+    margin: 0 auto 30px auto;
 }
 
 
@@ -168,7 +179,6 @@ ul, ol {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
     margin-top: 0;
 }
@@ -198,7 +208,6 @@ ul, ol {
 .partner {
     background-color: var(--button-bg-color);
     text-align: center;
-    padding-top: 0;
 }
 
 
@@ -209,6 +218,12 @@ ul, ol {
     text-transform: uppercase;
     letter-spacing: .03em;
     line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+.img-link {
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -234,7 +249,6 @@ ul, ol {
     color: var(--container-bg-color);
     background: var(--accent-color);
     font-size: 16px;
-    min-width: 216px;
     border-color: transparent;
     font-weight: 500;
     border-radius: 4px;
@@ -284,6 +298,7 @@ ul, ol {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .fio {
@@ -328,7 +343,7 @@ ul, ol {
     line-height: 1.19;
     letter-spacing: .03em;
     color: var(--container-bg-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .email--two {
@@ -337,13 +352,15 @@ ul, ol {
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 9px;
+    padding: 0;
+    margin-bottom: 9px;
 }
 
 .tel--two {
     color: var(--email-color);
     font-style: normal;
     font-size: 14px;
+    padding: 0;
 }
 
 .tel--two:hover {
@@ -361,7 +378,7 @@ ul, ol {
     font-style: normal;
     letter-spacing: 0.03em;
     line-height: 1.71;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .street:hover {
@@ -392,6 +409,14 @@ ul, ol {
     margin-bottom: 50px;
 }
 
+.style-menu {
+    margin-right: 8px;
+}
+
+.style-menu:last-child {
+    margin-right: 0;
+}
+
 .sec-menu {
     font-family: inherit;
     font-size: 16px;
@@ -403,7 +428,6 @@ ul, ol {
     border-color: transparent;
     cursor: pointer;
     letter-spacing: .03em;
-    margin-right: 8px;
 }
 
 .btn-menu {
@@ -442,28 +466,16 @@ ul, ol {
 .cards-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-.cards-img-link {
-    margin-bottom: 30px;
-}
 
 .border {
     border: 1px solid var(--container-border-color);
     padding: 20px 24px;
+    border-top: none;
 }
 
-.line {
-    position: absolute;
-    content: "";
-    border: 1px solid #ECECEC;
-    width: 1600px;
-    left: 0px;
-    height: 0px;
-    right: 0px;
-    top: 80px;
-}
 
 .img-block {
     display: block;
@@ -473,7 +485,7 @@ ul, ol {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: var(--primary-text-color);
     margin-bottom: 4px;
     margin-top: 0;
