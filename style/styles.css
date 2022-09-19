@@ -180,7 +180,6 @@ ul, ol {
 
 .nazv-img-link {
     margin-right: 30px;
-    margin-bottom: 94px;
 }
 
 .nazv-img-link:last-child {
@@ -226,7 +225,7 @@ ul, ol {
     letter-spacing: .03em;
     color: var(--secondary-text-color);
     margin-top: 0;
-    
+
 }
 
 .btn {
