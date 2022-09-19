@@ -226,6 +226,7 @@ ul, ol {
     letter-spacing: .03em;
     color: var(--secondary-text-color);
     margin-top: 0;
+    
 }
 
 .btn {
@@ -476,6 +477,7 @@ ul, ol {
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
     margin-bottom: 4px;
+    margin-top: 0;
 }
 
 .project p {
