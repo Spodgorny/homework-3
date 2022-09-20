@@ -117,7 +117,7 @@ ul, ol {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
     padding-top: 32px;
@@ -138,7 +138,7 @@ ul, ol {
     font-weight: 500;
     font-size: 14px;
     color: var(--secondary-text-color);
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 32px;
     letter-spacing: 0.02em;
 }
@@ -354,7 +354,6 @@ ul, ol {
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding: 0;
-    margin-bottom: 9px;
 }
 
 .tel--two {
@@ -379,7 +378,14 @@ ul, ol {
     font-style: normal;
     letter-spacing: 0.03em;
     line-height: 1.71;
+}
+
+.address-list {
     margin-bottom: 9px;
+}
+
+.address-list:last-child {
+    margin-bottom: 0;
 }
 
 .street:hover {
